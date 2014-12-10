@@ -3,7 +3,7 @@
 	"description": "DataManagement Plugin for OctoberCMS",
 	"type": "library",
 	"keywords": ["october", "cms", "plugin", "axc", "data", "management"],
-	"homepage": "https://www.alexcarrega.com/p/oc-plugin-data-management",
+	"homepage": "http://www.alexcarrega.com/p/oc-plugin-data-management",
 	"license": "Apache-2.0",
 	"authors": [
 		{
@@ -17,7 +17,7 @@
 		"email": "support-oc-plugin-data-management@alexcarrega.com",
 		"issues": "https://github.com/alexcarrega/oc-plugin-data-management/issues",
 		"wiki": "https://github.com/alexcarrega/oc-plugin-data-management/wiki",
-		"forum": "@todo",
+		"forum": "http://www.alexcarrega.com/f/oc-plugin-data-management",
 		"source": "https://github.com/alexcarrega/oc-plugin-data-management/wiki"
 	},
 	"require": {
