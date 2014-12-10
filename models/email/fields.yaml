@@ -1,0 +1,39 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+fields:
+  type:
+    comment: axc.datamanagement::lang.email.fields.type.comment
+    label: axc.framework::lang.fields.type.label
+    placeholder: axc.datamanagement::lang.email.fields.type.placeholder
+    required: true
+    span: left
+
+  address:
+    comment: axc.datamanagement::lang.email.fields.address.comment
+    label: axc.framework::lang.fields.address.label
+    placeholder: axc.datamanagement::lang.email.fields.address.placeholder
+    required: true
+    span: right
+
+  position:
+    comment: axc.datamanagement::lang.email.fields.position.comment
+    label: axc.framework::lang.fields.position.label
+    placeholder: axc.framework::lang.fields.position.placeholder
+    required: true
+    span: left
+    type: number
+
+  published:
+    comment: axc.datamanagement::lang.email.fields.published.comment
+    label: axc.framework::lang.fields.published.label
+    span: right
+    type: switch
+
+  principal:
+    comment: axc.datamanagement::lang.email.fields.principal.comment
+    label: axc.framework::lang.fields.principal.label
+    span: right
+    type: switch

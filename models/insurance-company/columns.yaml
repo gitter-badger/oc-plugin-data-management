@@ -1,0 +1,26 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+columns:
+  image:
+    label: axc.framework::lang.columns.image.label
+    type: partial
+    path: @/plugins/axc/framework/partials/backend/models/column/image.htm
+    axc-params:
+      controller: insurance_company
+      width: 50
+      height: 50
+      title: axc.datamanagement::lang.insurance.company.columns.image.title
+      settingsModel: AxC\DataManagement\Models\Settings
+    cssClass: pdn-15px wdt-100px nolink
+
+  info:
+    label: axc.datamanagement::lang.insurance.company.label.singular
+    type: partial
+    path: @/plugins/axc/framework/partials/backend/models/column/info.htm
+    axc-params:
+      infoTitle: axc.datamanagement::lang.insurance.company.columns.info.title
+    searchable: yes
+    cssClass: nolink

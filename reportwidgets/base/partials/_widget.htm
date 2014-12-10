@@ -1,0 +1,30 @@
+<? if ($this->alias !== "{$this->controller->type}_report_widget"): ?>
+	<div class="report-widget">
+		<h3><?= trans("axc.datamanagement::lang.{$this->controller->type}.widget.title") ?></h3>
+<? endif ?>
+	<div class="scoreboard">
+		<div data-control="toolbar">
+			<div class="scoreboard-item title-value">
+				<h4><?= trans("axc.datamanagement::lang.{$this->controller->type}.label.plural") ?></h4>
+				<p class="<?= $trend ?>"><?= $current_month ?></p>
+				<p class="description"><?= sprintf(trans("axc.framework::lang.widget.previous.month"), $previous_month) ?></p>
+			</div>
+
+			<div class="scoreboard-item control-chart" data-control="chart-bar">
+					<ul>
+							<li data-color="#95b753"><?= trans("axc.framework::lang.widget.total") ?> <span><?= $total ?></span></li>
+							<li data-color="#e5a91a"><?= trans("axc.framework::lang.widget.published.label") ?> <span><?= $published ?></span></li>
+							<li data-color="#cc3300"><?= trans("axc.framework::lang.widget.trashed") ?> <span><?= $trashed ?></span></li>
+					</ul>
+			</div>
+
+			<div class="scoreboard-item title-value" data-control="goal-meter" data-value="<?= $published_ratio ?>">
+				<h4><?= trans("axc.framework::lang.widget.published.ratio.title") ?></h4>
+				<p><?= $published_ratio ?>%</p>
+				<p class="description"><?= sprintf(trans("axc.datamanagement::lang.{$this->controller->type}.widget.published.ratio.description"), $published, $total) ?></p>
+		</div>
+		</div>
+	</div>
+<? if ($this->alias !== "{$this->controller->type}_report_widget"): ?>
+	</div>
+<? endif ?>

@@ -1,0 +1,32 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+fields:
+  code:
+    comment: axc.datamanagement::lang.abbreviation.fields.code.comment
+    label: axc.framework::lang.fields.code.label
+    placeholder: axc.datamanagement::lang.abbreviation.fields.code.placeholder
+    required: true
+    span: left
+
+  published:
+    comment: axc.datamanagement::lang.abbreviation.fields.published.comment
+    label: axc.framework::lang.fields.published.label
+    span: right
+    type: switch
+
+  acronym:
+    comment: axc.datamanagement::lang.abbreviation.fields.acronym.comment
+    label: axc.datamanagement::lang.abbreviation.fields.acronym.label
+    placeholder: axc.datamanagement::lang.abbreviation.fields.acronym.placeholder
+    required: true
+    span: left
+
+  meaning:
+    comment: axc.datamanagement::lang.abbreviation.fields.meaning.comment
+    label: axc.datamanagement::lang.abbreviation.fields.meaning.label
+    placeholder: axc.datamanagement::lang.abbreviation.fields.meaning.placeholder
+    required: true
+    span: right

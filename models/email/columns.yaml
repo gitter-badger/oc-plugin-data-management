@@ -1,0 +1,13 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+columns:
+  type:
+    label: axc.framework::lang.columns.type.label
+    searchable: yes
+
+  address:
+    label: axc.framework::lang.columns.address.label
+    searchable: yes

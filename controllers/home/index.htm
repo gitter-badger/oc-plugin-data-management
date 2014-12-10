@@ -1,0 +1,28 @@
+
+<div class="container mrg-t-50px">
+
+	<? foreach ($parts as $name => $part): ?>
+		<? if ($index % 3 == 1): ?>
+			<div class="row">
+		<?endif ?>
+			<div class="col-sm-4 col-xs-4 text-center mrg-b-50px">
+				<div id="tile-<? $name ?>" class="tile tile-<?= $index++ ?> wdt-200px hgt-200px">
+					<div class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="item active pdn-t-40px">
+								<i class="<?= $part['icon'] ?> icon-5x"></i>
+								<h3><?= $part['label'] ?></h3>
+							</div>
+
+							<div class="item">
+								<a href="<?= \Backend::URL("axc/datamanagement/$name") ?>"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<? if ($index % 3 == 1): ?>
+			</div><!-- .row -->
+		<?endif ?>
+	<? endforeach ?>
+</div>

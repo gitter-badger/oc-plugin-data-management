@@ -1,0 +1,20 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+columns:
+  code:
+    label: axc.framework::lang.columns.code.label
+    searchable: yes
+    cssClass: wdt-100px nolink
+
+  acronym:
+    label: axc.datamanagement::lang.abbreviation.columns.acronym.label
+    searchable: yes
+    cssClass: wdt-150px nolink
+
+  meaning:
+    label: axc.datamanagement::lang.abbreviation.columns.meaning.label
+    searchable: yes
+    cssClass: nolink

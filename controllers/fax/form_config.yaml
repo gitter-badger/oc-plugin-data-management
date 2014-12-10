@@ -1,0 +1,22 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+name: axc.datamanagement::lang.fax.label.singular
+form: @/plugins/axc/datamanagement/models/fax/fields.yaml
+modelClass: AxC\DataManagement\Models\Fax
+defaultRedirect: axc/datamanagement/fax
+
+create:
+  title: backend::lang.form.create_title
+  redirect: axc/datamanagement/fax/update/:id
+  redirectClose: axc/datamanagement/fax
+  flashSave: backend::lang.form.create_success
+
+update:
+  title: backend::lang.form.update_title
+  redirect: axc/datamanagement/fax/update/:id
+  redirectClose: axc/datamanagement/fax
+  flashSave: backend::lang.form.update_success
+  flashDelete:  backend::lang.form.delete_success

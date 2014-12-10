@@ -1,0 +1,39 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+fields:
+  type:
+    comment: axc.datamanagement::lang.phone.fields.type.comment
+    label: axc.framework::lang.fields.type.label
+    placeholder: axc.datamanagement::lang.phone.fields.type.placeholder
+    required: true
+    span: left
+
+  number:
+    comment: axc.datamanagement::lang.phone.fields.number.comment
+    label: axc.framework::lang.fields.number.label
+    placeholder: axc.datamanagement::lang.phone.fields.number.placeholder
+    required: true
+    span: right
+
+  position:
+    comment: axc.datamanagement::lang.phone.fields.position.comment
+    label: axc.framework::lang.fields.position.label
+    placeholder: axc.framework::lang.fields.position.placeholder
+    required: true
+    span: left
+    type: number
+
+  published:
+    comment: axc.datamanagement::lang.phone.fields.publishedComment
+    label: axc.framework::lang.fields.published.label
+    span: right
+    type: switch
+
+  principal:
+    comment: axc.datamanagement::lang.phone.fields.principalComment
+    label: axc.framework::lang.fields.principal.label
+    span: right
+    type: switch

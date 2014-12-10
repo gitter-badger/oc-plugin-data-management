@@ -1,0 +1,41 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+fields:
+  title:
+    comment: axc.datamanagement::lang.insurance.company.fields.title.comment
+    label: axc.datamanagement::lang.insurance.company.fields.title.label
+    placeholder: axc.datamanagement::lang.insurance.company.fields.title.placeholder
+    required: true
+
+  url:
+    comment: axc.datamanagement::lang.insurance.company.fields.url.comment
+    label: axc.datamanagement::lang.insurance.company.fields.url.label
+    placeholder: axc.datamanagement::lang.insurance.company.fields.url.placeholder
+    required: true
+
+  image:
+    commentAbove: axc.datamanagement::lang.insurance.company.fields.image.comment|todo
+    imageHeight: 180
+    imageWidth: 180
+    label: axc.datamanagement::lang.insurance.company.fields.image.label
+    mode: image
+    size: giant
+    span: right
+    type: fileupload
+
+  position:
+    comment: axc.datamanagement::lang.insurance.company.fields.position.comment
+    label: axc.datamanagement::lang.insurance.company.fields.position.label
+    placeholder: axc.datamanagement::lang.insurance.company.fields.position.placeholder
+    required: true
+    span: left
+    type: number
+
+  published:
+    comment: axc.datamanagement::lang.insurance.company.fields.published.comment
+    label: axc.datamanagement::lang.insurance.company.fields.published.label
+    span: left
+    type: switch

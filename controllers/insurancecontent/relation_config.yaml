@@ -1,0 +1,19 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+items:
+  label: axc.datamanagement::lang.insurance.content.item.label.singular
+  list: @/plugins/axc/datamanagement/models/insurance-content-item/columns.yaml
+  form: @/plugins/axc/datamanagement/models/insurance-content-item/fields.yaml
+  manage:
+    defaultSort: value
+    recordsPerPage: 20
+    showSearch: true
+    showSorting: true
+  view:
+    defaultSort: value
+    recordsPerPage: 20
+    showSearch: true
+    showSorting: true

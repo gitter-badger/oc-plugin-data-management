@@ -1,0 +1,41 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+fields:
+  title:
+    comment: axc.datamanagement::lang.slideshow.fields.title.comment
+    label: axc.framework::lang.fields.title.label
+    placeholder: axc.framework::lang.fields.title.placeholder
+    required: true
+
+  image:
+    commentAbove: axc.datamanagement::lang.slideshow.fields.image.comment
+    imageHeight: 500
+    imageWidth: 2000
+    label: axc.framework::lang.fields.image.label
+    mode: image
+    size: giant
+    type: fileupload
+
+  position:
+    comment: axc.datamanagement::lang.slideshow.fields.position.comment
+    label: axc.framework::lang.fields.position.label
+    placeholder: axc.framework::lang.fields.position.placeholder
+    required: true
+    span: left
+    type: number
+
+  published:
+    comment: axc.datamanagement::lang.slideshow.fields.published.comment
+    label: axc.framework::lang.fields.published.label
+    span: right
+    type: switch
+
+  description:
+    commentAbove: axc.datamanagement::lang.slideshow.fields.description.comment
+    label: axc.framework::lang.fields.description.label
+    required: true
+    size: huge
+    type: Backend\FormWidgets\RichEditor

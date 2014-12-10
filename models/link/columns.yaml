@@ -1,0 +1,31 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+columns:
+  image:
+    label: axc.framework::lang.columns.image.label
+    type: partial
+    path: @/plugins/axc/framework/partials/backend/models/column/image.htm
+    axc-params:
+      controller: link
+      width: 50
+      height: 50
+      title: axc.datamanagement::lang.link.columns.image.title
+      settingsModel: AxC\DataManagement\Models\Settings
+    cssClass: pdn-10px wdt-100px nolink
+
+  info:
+    label: axc.datamanagement::lang.link.label.singular
+    type: partial
+    path: @/plugins/axc/framework/partials/backend/models/column/info.htm
+    axc-params:
+      infoTitle: axc.framework::lang.system.openURL.anotherWindow
+    searchable: yes
+    cssClass: wdt-300px nolink
+
+  description:
+    label: axc.framework::lang.columns.description.label
+    searchable: yes
+    cssClass: nolink

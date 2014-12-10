@@ -1,0 +1,112 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+tabs:
+  fields:
+    enable_abbreviation:
+      comment: axc.datamanagement::lang.settings.fields.abbreviation.enable.comment
+      label: axc.datamanagement::lang.abbreviation.label.singular
+      span: left
+      tab: axc.datamanagement::lang.settings.tab.enable
+      type: switch
+
+    enable_email:
+      comment: axc.datamanagement::lang.settings.fields.email.enable.comment
+      label: axc.datamanagement::lang.email.label.singular
+      span: right
+      tab: axc.datamanagement::lang.settings.tab.enable
+      type: switch
+
+    enable_phone:
+      comment: axc.datamanagement::lang.settings.fields.phone.enable.comment
+      label: axc.datamanagement::lang.phone.label.singular
+      span: left
+      tab: axc.datamanagement::lang.settings.tab.enable
+      type: switch
+
+    enable_fax:
+      comment: axc.datamanagement::lang.settings.fields.fax.enable.comment
+      label: axc.datamanagement::lang.fax.label.singular
+      span: right
+      tab: axc.datamanagement::lang.settings.tab.enable
+      type: switch
+
+    enable_insurance:
+      comment: axc.datamanagement::lang.settings.fields.insurance.enable.comment
+      label: axc.datamanagement::lang.insurance.label.singular
+      span: left
+      tab: axc.datamanagement::lang.settings.tab.enable
+      type: switch
+
+    enable_link:
+      comment: axc.datamanagement::lang.settings.fields.link.enable.comment
+      label: axc.datamanagement::lang.link.label.singular
+      span: right
+      tab: axc.datamanagement::lang.settings.tab.enable
+      type: switch
+
+    enable_route:
+      comment: axc.datamanagement::lang.settings.fields.route.enable.comment
+      label: axc.datamanagement::lang.route.label.singular
+      span: left
+      tab: axc.datamanagement::lang.settings.tab.enable
+      type: switch
+
+    enable_slideshow:
+      comment: axc.datamanagement::lang.settings.fields.slideshow.enable.comment
+      label: axc.datamanagement::lang.slideshow.label.singular
+      span: right
+      tab: axc.datamanagement::lang.settings.tab.enable
+      type: switch
+
+    link_image_width:
+      comment: axc.datamanagement::lang.settings.fields.link_image.width.comment
+      label: axc.datamanagement::lang.settings.fields.link_image.width.label
+      placeholder: axc.datamanagement::lang.settings.fields.link_image.width.placeholder
+      span: left
+      tab:  axc.datamanagement::lang.link.label.singular
+      type: number
+
+    link_image_height:
+      comment: axc.datamanagement::lang.settings.fields.link_image.height.comment
+      label: axc.datamanagement::lang.settings.fields.link_image.height.label
+      placeholder: axc.datamanagement::lang.settings.fields.link_image.height.placeholder
+      span: right
+      tab:  axc.datamanagement::lang.link.label.singular
+      type: number
+
+    slideshow_image_width:
+      comment: axc.datamanagement::lang.settings.fields.slideshow_image.width.comment
+      label: axc.datamanagement::lang.settings.fields.slideshow_image.width.label
+      placeholder: axc.datamanagement::lang.settings.fields.slideshow_image.width.placeholder
+      span: left
+      tab:  axc.datamanagement::lang.slideshow.label.singular
+      tab: Link
+      type: number
+
+    slideshow_image_height:
+      comment: axc.datamanagement::lang.settings.fields.slideshow_image.height.comment
+      label: axc.datamanagement::lang.settings.fields.slideshow_image.height.label
+      placeholder: axc.datamanagement::lang.settings.fields.slideshow_image.height.placeholder
+      span: right
+      tab:  axc.datamanagement::lang.slideshow.label.singular
+      type: number
+
+    insurance_company_image_width:
+      comment: axc.datamanagement::lang.settings.fields.insurance_company_image.width.comment
+      label: axc.datamanagement::lang.settings.fields.insurance_company_image.width.label
+      placeholder: axc.datamanagement::lang.settings.fields.insurance_company_image.width.placeholder
+      span: left
+      tab:  axc.datamanagement::lang.insurance.company.label.singular
+      tab: Link
+      type: number
+
+    insurance_company_image_height:
+      comment: axc.datamanagement::lang.settings.fields.insurance_company_image.height.comment
+      label: axc.datamanagement::lang.settings.fields.insurance_company_image.height.label
+      placeholder: axc.datamanagement::lang.settings.fields.insurance_company_image.height.placeholder
+      span: right
+      tab:  axc.datamanagement::lang.insurance.company.label.singular
+      type: number

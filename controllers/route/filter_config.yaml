@@ -1,0 +1,41 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+scopes:
+  language_filter:
+    label: axc.framework::lang.filter.language.label
+    modelClass: 'RainLab\Translate\Models\Locale'
+    nameFrom: code
+    scope: filterEquals
+
+  path_filter:
+    label: axc.framework::lang.filter.path.label
+    modelClass: 'AxC\Framework\Models\FilterAlpha'
+    nameFrom: message
+    scope: filterStarts
+
+  page_filter:
+    label: axc.framework::lang.filter.page.label
+    modelClass: 'AxC\Framework\Models\FilterAlpha'
+    nameFrom: message
+    scope: filterStarts
+
+  published_filter:
+    label: axc.framework::lang.filter.principal.label
+    modelClass: 'AxC\Framework\Models\FilterYesNo'
+    nameFrom: message
+    scope: filterEquals
+
+  created_by_filter:
+    conditions: created_by_id in (:filtered)
+    label: axc.framework::lang.filter.createdBy.label
+    modelClass: 'Backend\Models\User'
+    nameFrom: login
+
+  updated_by_filter:
+    conditions: updated_by_id in (:filtered)
+    label: axc.framework::lang.filter.updatedBy.label
+    modelClass: 'Backend\Models\User'
+    nameFrom: login

@@ -1,0 +1,18 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+title: axc.datamanagement::lang.abbreviation.label.singular
+list: @/plugins/axc/datamanagement/models/abbreviation/columns.yaml
+modelClass: AxC\DataManagement\Models\Abbreviation
+recordUrl: axc/datamanagement/abbreviation/update/:id
+noRecordsMessage: backend::lang.list.no_records
+filter: filter_config.yaml
+recordsPerPage: 20
+showCheckboxes: true
+showSetup: true
+toolbar:
+  buttons: @/plugins/axc/framework/partials/backend/controllers/toolbars/trash.htm
+  search:
+    prompt: backend::lang.list.search_prompt

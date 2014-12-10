@@ -1,0 +1,25 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+columns:
+  language:
+    label: axc.framework::lang.columns.language.label
+    path: @/plugins/axc/framework/partials/backend/models/column/flag-icon-circle.htm
+    type: partial
+    cssClass: wdt-115px nolink
+
+  path:
+    label: axc.framework::lang.columns.path.label
+    path: @/plugins/axc/framework/partials/backend/models/column/ahref.htm
+    searchable: yes
+    type: partial
+    cssClass: nolink
+
+  page:
+    label: axc.framework::lang.columns.page.label
+    path: @/plugins/axc/framework/partials/backend/models/column/ahref.htm
+    searchable: yes
+    type: partial
+    cssClass: wdt-500px nolink

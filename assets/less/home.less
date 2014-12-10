@@ -1,0 +1,27 @@
+@import (css) "http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css";
+
+@color: rgb(0,172,238) #FFA726 rgb(71,193,228) rgb(0,93,233) rgb(175,26,63) rgb(62,157,215) #FBC02D rgb(209,70,37) rgb(0,142,0);
+
+.loop(@counter) when (@counter > 0)
+{
+	.loop(@counter - 1);
+
+	.tile-@{counter}
+	{
+		background-color: extract(@color, @counter);
+
+		&:hover
+		{
+			//.animated;
+		}
+	}
+}
+
+.loop(0) {};
+
+.loop( length(@color) );
+
+.tile
+{
+	color: whitesmoke;
+}

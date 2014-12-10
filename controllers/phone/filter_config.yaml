@@ -1,0 +1,47 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+scopes:
+  position_filter:
+    label: axc.framework::lang.filter.position.label
+    modelClass: 'AxC\Framework\Models\FilterIntegerRange'
+    nameFrom: message
+    scope: filterIntegerRange
+
+  type_filter:
+    label: axc.framework::lang.filter.type.label
+    modelClass: 'AxC\Framework\Models\FilterAlpha'
+    nameFrom: message
+    scope: filterStarts
+
+  number_filter:
+    label: axc.framework::lang.filter.number.label
+    modelClass: 'AxC\Framework\Models\FilterIntegerRange'
+    nameFrom: message
+    scope: filterStarts
+
+  published_filter:
+    label: axc.framework::lang.filter.published.label
+    modelClass: 'AxC\Framework\Models\FilterYesNo'
+    nameFrom: message
+    scope: filterEquals
+
+  principal_filter:
+    label: axc.framework::lang.filter.principal.label
+    modelClass: 'AxC\Framework\Models\FilterYesNo'
+    nameFrom: message
+    scope: filterEquals
+
+  created_by_filter:
+    conditions: created_by_id in (:filtered)
+    label: axc.framework::lang.filter.createdBy.label
+    modelClass: 'Backend\Models\User'
+    nameFrom: login
+
+  updated_by_filter:
+    conditions: updated_by_id in (:filtered)
+    label: axc.framework::lang.filter.updatedBy.label
+    modelClass: 'Backend\Models\User'
+    nameFrom: login

@@ -1,0 +1,41 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+scopes:
+  code_filter:
+    label: axc.framework::lang.filter.code.label
+    modelClass: 'AxC\Framework\Models\FilterAlpha'
+    nameFrom: message
+    scope: filterStarts
+
+  acronym_filter:
+    label: axc.datamanagement::lang.abbreviation.filter.acronym.label
+    modelClass: 'AxC\Framework\Models\FilterAlpha'
+    nameFrom: message
+    scope: filterStarts
+
+  meaning_filter:
+    label: axc.datamanagement::lang.abbreviation.filter.meaning.label
+    modelClass: 'AxC\Framework\Models\FilterAlpha'
+    nameFrom: message
+    scope: filterStarts
+
+  published_filter:
+    label: axc.framework::lang.filter.published.label
+    modelClass: 'AxC\Framework\Models\FilterYesNo'
+    nameFrom: message
+    scope: filterEquals
+
+  created_by_filter:
+    conditions: created_by_id in (:filtered)
+    label: axc.framework::lang.filter.createdBy.label
+    modelClass: 'Backend\Models\User'
+    nameFrom: login
+
+  updated_by_filter:
+    conditions: updated_by_id in (:filtered)
+    label: axc.framework::lang.filter.updatedBy.label
+    modelClass: 'Backend\Models\User'
+    nameFrom: login

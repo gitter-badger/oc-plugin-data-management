@@ -1,0 +1,30 @@
+###
+ # @author Alex Carrega <contact@alexcarrega.com>
+ # @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ ##
+
+fields:
+  path:
+    comment: axc.datamanagement::lang.route.fields.path.comment
+    label: axc.framework::lang.fields.path.label
+    placeholder: axc.datamanagement::lang.route.fields.path.placeholder
+    required: true
+    span: left
+
+  page:
+    comment: axc.datamanagement::lang.route.fields.page.comment
+    label: axc.framework::lang.fields.page.label
+    type: dropdown
+    span: right
+
+  language:
+    comment: axc.datamanagement::lang.route.fields.language.comment
+    label: axc.framework::lang.fields.language.label
+    type: dropdown
+    span: left
+
+  published:
+    comment: axc.datamanagement::lang.route.fields.published.comment
+    label: axc.framework::lang.fields.published.label
+    span: right
+    type: switch
