@@ -1,4 +1,3 @@
-data-management
-===============
+# oc-plugin-data-management
 
-DataManagement Plugin for OctoberCMS
+> DataManagement Plugin for OctoberCMS.
