@@ -1,7 +1,6 @@
 {
 	"name": "alexcarrega/oc-plugin-data-management",
 	"dependencies": {
-		"axc-class2.css": ">=0.0.1"
 	},
 	"private": true
 }
