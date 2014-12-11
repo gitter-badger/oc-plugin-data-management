@@ -26,20 +26,6 @@ fields:
     span: right
     type: fileupload
 
-  position:
-    comment: axc.datamanagement::lang.link.fields.position.comment
-    label: axc.framework::lang.fields.position.label
-    placeholder: axc.framework::lang.fields.position.placeholder
-    required: true
-    span: left
-    type: number
-
-  published:
-    comment: axc.datamanagement::lang.link.fields.published.comment
-    label: axc.framework::lang.fields.published.label
-    span: left
-    type: switch
-
   description:
     commentAbove: axc.framework::lang.fields.description.comment
     label: axc.framework::lang.fields.description.label

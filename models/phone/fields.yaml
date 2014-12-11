@@ -17,23 +17,3 @@ fields:
     placeholder: axc.datamanagement::lang.phone.fields.number.placeholder
     required: true
     span: right
-
-  position:
-    comment: axc.datamanagement::lang.phone.fields.position.comment
-    label: axc.framework::lang.fields.position.label
-    placeholder: axc.framework::lang.fields.position.placeholder
-    required: true
-    span: left
-    type: number
-
-  published:
-    comment: axc.datamanagement::lang.phone.fields.publishedComment
-    label: axc.framework::lang.fields.published.label
-    span: right
-    type: switch
-
-  principal:
-    comment: axc.datamanagement::lang.phone.fields.principalComment
-    label: axc.framework::lang.fields.principal.label
-    span: right
-    type: switch

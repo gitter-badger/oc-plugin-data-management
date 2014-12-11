@@ -11,12 +11,6 @@ fields:
     required: true
     span: left
 
-  published:
-    comment: axc.datamanagement::lang.abbreviation.fields.published.comment
-    label: axc.framework::lang.fields.published.label
-    span: right
-    type: switch
-
   acronym:
     comment: axc.datamanagement::lang.abbreviation.fields.acronym.comment
     label: axc.datamanagement::lang.abbreviation.fields.acronym.label

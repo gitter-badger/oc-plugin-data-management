@@ -1,5 +1,5 @@
 {
-	"name": "axc/oc-plugin-data-management",
+	"name": "alexcarrega/oc-plugin-data-management",
 	"dependencies": {
 		"axc-class2.css": ">=0.0.1"
 	},
