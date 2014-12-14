@@ -22,9 +22,3 @@ fields:
     label: axc.framework::lang.fields.language.label
     type: dropdown
     span: left
-
-  published:
-    comment: axc.datamanagement::lang.route.fields.published.comment
-    label: axc.framework::lang.fields.published.label
-    span: right
-    type: switch

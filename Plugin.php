@@ -17,10 +17,7 @@ class Plugin extends \System\Classes\PluginBase
 	 * Plugin dependencies.
 	 * @var array
 	 */
-	public $require = [
-		'AxC.Framework',
-		'RainLab.Translate'
-	];
+	public $require = ['RainLab.Translate', 'AxC.Framework'];
 
 	/**
 	 * Returns information about this plugin.

@@ -9,19 +9,18 @@
 namespace AxC\DataManagement\Controllers;
 
 /**
- * Home controller.
+ * Home Backend controller.
  */
-class Home extends \AxC\Framework\Controllers\Page
+class Home extends \Backend\Classes\Controller
 {
 	/**
-	 * Set the page title and add the CSS resources.
-	 * @return null
+	 * Controller extensions.
+	 * @var array
 	 */
-	protected function _initPage()
-	{
-		$this->pageTitle = trans('axc.datamanagement::lang.settings.label');
-		$this->addCss('/plugins/axc/DataManagement/assets/css/home.css');
-	}
+	public $implement = [
+		'AxC.Framework.Behaviors.BackendController',
+		'AxC.Framework.Behaviors.BackendAssetController'
+	];
 
 	/**
 	 * Index action.
@@ -29,8 +28,13 @@ class Home extends \AxC\Framework\Controllers\Page
 	 */
 	public function index()
 	{
+		$this->pageTitle = trans('axc.datamanagement::lang.settings.label');
+		$this->addJs('/plugins/axc/datamanagement/assets/dist/home.js', 'core');
+		$this->addCss('/plugins/axc/datamanagement/assets/dist/home.css', 'core');
 		$navigation = \System\Classes\PluginManager::instance()->findByIdentifier('AxC.DataManagement')->registerNavigation();
 		array_shift( $navigation['data-management']['sideMenu'] );
+		$this->vars['tile_bg'] = ['', 'cyan', 'darkRed', 'green', 'orange', 'darkPink', 'amber', 'darkCobalt', 'lightGreen', 'darkCyan'];
+		$this->vars['tile_size'] = ['', 'double-vertical', 'quadro', 'double', '', 'double', '', 'double', '', ''];
 		$this->vars['parts'] = $navigation['data-management']['sideMenu'];
 		$this->vars['index'] = 1;
 	}

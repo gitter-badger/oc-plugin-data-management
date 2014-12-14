@@ -16,11 +16,11 @@ fields:
     label: axc.datamanagement::lang.abbreviation.fields.acronym.label
     placeholder: axc.datamanagement::lang.abbreviation.fields.acronym.placeholder
     required: true
-    span: left
+    span: right
 
   meaning:
     comment: axc.datamanagement::lang.abbreviation.fields.meaning.comment
     label: axc.datamanagement::lang.abbreviation.fields.meaning.label
     placeholder: axc.datamanagement::lang.abbreviation.fields.meaning.placeholder
     required: true
-    span: right
+    span: left

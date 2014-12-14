@@ -20,11 +20,6 @@ class Phone extends \AxC\Framework\Models\Base
 	protected $table = 'axc_data_management_phone';
 
 	/**
-	 * To update principal field before save.
-	 */
-	use \AxC\Framework\Traits\FieldPrincipal;
-
-	/**
 	 * Modal validation.
 	 * @var array
 	 */

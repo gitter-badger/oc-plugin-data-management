@@ -3,7 +3,7 @@
 /**
  * @author Alex Carrega <contact@alexcarrega.com>
  * @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
- * @package \AxC\DataManagement\ReportWidgetss
+ * @package \AxC\DataManagement\ReportWidgets
  */
 
 namespace AxC\DataManagement\ReportWidgets;
@@ -72,7 +72,7 @@ class Base extends \Backend\Classes\ReportWidgetBase
 			'current_month' => $current_month,
 			'previous_month' => $previous_month,
 			'published' => $published,
-			'published_ratio' => (int)($published / $total * 100),
+			'published_ratio' => $total != 0 ? (int)($published / $total * 100) : 0,
 			'total' => $total,
 			'trashed' => $trashed,
 			'trend' => $trend

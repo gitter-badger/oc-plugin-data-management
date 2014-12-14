@@ -1,27 +1,19 @@
-@import (css) "http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css";
+/**
+ * @author Alex Carrega <contact@alexcarrega.com>
+ * @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ */
 
-@color: rgb(0,172,238) #FFA726 rgb(71,193,228) rgb(0,93,233) rgb(175,26,63) rgb(62,157,215) #FBC02D rgb(209,70,37) rgb(0,142,0);
-
-.loop(@counter) when (@counter > 0)
+.layout-cell
 {
-	.loop(@counter - 1);
-
-	.tile-@{counter}
-	{
-		background-color: extract(@color, @counter);
-
-		&:hover
-		{
-			//.animated;
-		}
-	}
+	padding: 0 !important;
 }
 
-.loop(0) {};
-
-.loop( length(@color) );
-
-.tile
+.layout-row, .metro
 {
-	color: whitesmoke;
+	/* Firefox */
+	height: -moz-calc(100%);
+	/* WebKit */
+	height: -webkit-calc(100%);
+	/* Standard */
+	height: calc(100%);
 }

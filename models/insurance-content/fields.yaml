@@ -9,3 +9,4 @@ fields:
     label: axc.framework::lang.fields.title.label
     placeholder: axc.framework::lang.fields.title.placeholder
     required: true
+    span: left

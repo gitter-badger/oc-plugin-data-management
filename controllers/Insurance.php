@@ -9,24 +9,19 @@
 namespace AxC\DataManagement\Controllers;
 
 /**
- * Insurance controller.
+ * Insurance Backend controller.
  */
-class Insurance extends \AxC\Framework\Controllers\Page
+class Insurance extends \Backend\Classes\Controller
 {
 	/**
-	 * To manage the controller report widgets.
+	 * Controller extensions.
+	 * @var array
 	 */
-	use \AxC\Framework\Traits\ReportWidgetManager;
-
-	/**
-	 * Set the page title and add the report widgets.
-	 */
-	protected function _initPage()
-	{
-		$this->pageTitle = trans('axc.datamanagement::lang.insurance.label.singular');
-		\AxC\DataManagement\ReportWidgets\Base::create($this, '\AxC\DataManagement\Models\InsuranceCompany');
-		\AxC\DataManagement\ReportWidgets\Base::create($this, '\AxC\DataManagement\Models\InsuranceContent');
-	}
+	public $implement = [
+		'AxC.Framework.Behaviors.BackendController',
+		'AxC.Framework.Behaviors.BackendAssetController',
+		'AxC.Framework.Behaviors.ReportWidgetController'
+	];
 
 	/**
 	 * Index action.
@@ -34,6 +29,8 @@ class Insurance extends \AxC\Framework\Controllers\Page
 	 */
 	public function index()
 	{
-		// do nothing
+		$this->pageTitle = trans('axc.datamanagement::lang.insurance.label.singular');
+		\AxC\DataManagement\ReportWidgets\Base::create($this, '\AxC\DataManagement\Models\InsuranceCompany');
+		\AxC\DataManagement\ReportWidgets\Base::create($this, '\AxC\DataManagement\Models\InsuranceContent');
 	}
 }

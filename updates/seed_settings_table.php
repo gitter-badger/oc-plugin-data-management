@@ -8,13 +8,12 @@
 
 namespace AxC\DataManagement\Updates;
 
-use Seeder;
 use AxC\DataManagement\Models\Settings;
 
 /**
  * Add data to DataManagement Settings DB scheme.
  */
-class SeedSettingsTable extends Seeder
+class SeedSettingsTable extends \Seeder
 {
 	/**
 	 * Add data to DB scheme

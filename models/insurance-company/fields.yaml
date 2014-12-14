@@ -6,22 +6,24 @@
 fields:
   title:
     comment: axc.datamanagement::lang.insurance.company.fields.title.comment
-    label: axc.datamanagement::lang.insurance.company.fields.title.label
-    placeholder: axc.datamanagement::lang.insurance.company.fields.title.placeholder
+    label: axc.framework::lang.fields.title.label
+    placeholder: axc.framework::lang.fields.title.placeholder
     required: true
+    span: left
 
   url:
     comment: axc.datamanagement::lang.insurance.company.fields.url.comment
-    label: axc.datamanagement::lang.insurance.company.fields.url.label
-    placeholder: axc.datamanagement::lang.insurance.company.fields.url.placeholder
+    label: axc.framework::lang.fields.url.label
+    placeholder: axc.framework::lang.fields.url.placeholder
     required: true
+    span: right
 
   image:
-    commentAbove: axc.datamanagement::lang.insurance.company.fields.image.comment|todo
+    commentAbove: axc.datamanagement::lang.insurance.company.fields.image.comment
     imageHeight: 180
     imageWidth: 180
-    label: axc.datamanagement::lang.insurance.company.fields.image.label
+    label: axc.framework::lang.fields.image.label
     mode: image
     size: giant
-    span: right
+    span: left
     type: fileupload

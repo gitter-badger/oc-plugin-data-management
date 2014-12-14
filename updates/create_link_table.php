@@ -8,14 +8,12 @@
 
 namespace AxC\Links\Updates;
 
-use Schema;
-use October\Rain\Database\Updates\Migration;
 use AxC\Framework\Helpers\Schema as SchemaHelper;
 
 /**
  * Create the Link DB scheme.
  */
-class CreateLinkTable extends Migration
+class CreateLinkTable extends \October\Rain\Database\Updates\Migration
 {
 	/**
 	 * Create the DB scheme.
@@ -23,8 +21,8 @@ class CreateLinkTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::dropIfExists('axc_data_management_link');
-		Schema::create('axc_data_management_link', function($table)
+		\Schema::dropIfExists('axc_data_management_link');
+		\Schema::create('axc_data_management_link', function($table)
 		{
 			SchemaHelper::init($table);
 			$table->string('title')->unique()->index();
@@ -44,6 +42,6 @@ class CreateLinkTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::drop('axc_data_management_link');
+		\Schema::dropIfExists('axc_data_management_link');
 	}
 }

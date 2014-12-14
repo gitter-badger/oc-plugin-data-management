@@ -1,40 +1,39 @@
-1.0.9.7.17:
-  - First version of Link
-  - Add Link Model
+1.0.1: Initial release
+1.1.1:
+  - Link management
   - create_link_table.php
-  - seed_link_table.php
-1.0.9.8.25:
-  - First version of Slideshow
-  - create_slideshow_table.php
-  - seed_slideshow_table.php
-1.0.9.9.31:
-  - "First version of Phone, Email and Fax models"
-  - create_email_table.php
-  - create_fax_table.php
-  - create_link_table.php
-  - create_phone_table.php
-  - seed_email_table.php
-  - seed_fax_table.php
-  - seed_link_table.php
-  - seed_phone_table.php
-1.0.10.13:
-  - "First version of SlideShow models"
-  - create_slideshow_table.php
-  - seed_slideshow_table.php
-1.0.11.51:
-  - First version of Insurance models
-  - create_insurance_company_table.php
-  - create_insurance_content_item_table.php
-  - create_insurance_content_table.php
-  - seed_insurance_company_table.php
-  - seed_insurance_content_table.php
-1.0.1.6:
-  - Added default value for Settings
   - seed_settings_table.php
-1.0.13.5:
-  - Added Abbrevation management
+1.2.1:
+  - Slideshow management
+  - create_slideshow_table.php
+  - seed_settings_table.php
+1.3.1:
+  - Email management
+  - create_email_table.php
+  - seed_settings_table.php
+1.4.1:
+  - Phone management
+  - create_phone_table.php
+  - seed_settings_table.php
+1.5.1:
+  - Fax management
+  - create_fax_table.php
+  - seed_settings_table.php
+1.6.1:
+  - SlideShow management
+  - create_slideshow_table.php
+  - seed_settings_table.php
+1.7.1:
+  - Insurance management
+  - create_insurance_company_table.php
+  - create_insurance_content_table.php
+  - create_insurance_content_item_table.php
+  - seed_settings_table.php
+1.8.1:
+  - Abbrevation management
   - create_abbreviation_table.php
-  - seed_abbreviation_table.php
-1.14.5:
-  - Added Route management
+  - seed_settings_table.php
+1.9.1:
+  - Route management
   - create_route_table.php
+  - seed_settings_table.php

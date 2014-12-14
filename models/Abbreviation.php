@@ -68,12 +68,4 @@ class Abbreviation extends \AxC\Framework\Models\Base
 	{
 		return \AxC\Framework\Helpers\Filter::scopeStarts('meaning', 'AxC\Framework\Models\FilterAlpha', $query, $params);
 	}
-
-	public function beforeDuplicate()
-	{
-		$this->code .= 'a';
-		$this->acronym .= 'A';
-		$this->meaning .= 'a';
-		return parent::save();
-	}
 }

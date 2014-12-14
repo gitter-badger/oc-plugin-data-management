@@ -12,11 +12,15 @@
 $settings_lang = [
 	'label' => 'Data Management',
 	'description' => 'Configure Data Management settings',
+	'enable' => [
+		'abbreviation' => ['comment' => ''],
+	],
 	'fields' => [
 		'tab' => [
+			'enable' => 'Enable',
 			'link' => 'Link',
 			'slideshow' => 'Slideshow',
-			'insurance_company' => 'Insurance Company'
+			'insurance_company' => 'Insurance Company',
 		],
 		'link_image' => [
 			'width' => [

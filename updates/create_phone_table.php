@@ -8,14 +8,12 @@
 
 namespace AxC\DataManagement\Updates;
 
-use Schema;
-use October\Rain\Database\Updates\Migration;
 use AxC\Framework\Helpers\Schema as SchemaHelper;
 
 /**
  * Create the Phone DB scheme.
  */
-class CreatePhoneTable extends Migration
+class CreatePhoneTable extends \October\Rain\Database\Updates\Migration
 {
 	/**
 	 * Create the DB scheme.
@@ -23,8 +21,8 @@ class CreatePhoneTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::dropIfExists('axc_data_management_phone');
-		Schema::create('axc_data_management_phone', function($table)
+		\Schema::dropIfExists('axc_data_management_phone');
+		\Schema::create('axc_data_management_phone', function($table)
 		{
 			SchemaHelper::init($table);
 			$table->string('type')->unique()->index();
@@ -44,6 +42,6 @@ class CreatePhoneTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::drop('axc_data_management_phone');
+		\Schema::dropIfExists('axc_data_management_phone');
 	}
 }

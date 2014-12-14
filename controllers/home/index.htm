@@ -1,28 +1,17 @@
-
-<div class="container mrg-t-50px">
-
-	<? foreach ($parts as $name => $part): ?>
-		<? if ($index % 3 == 1): ?>
-			<div class="row">
-		<?endif ?>
-			<div class="col-sm-4 col-xs-4 text-center mrg-b-50px">
-				<div id="tile-<? $name ?>" class="tile tile-<?= $index++ ?> wdt-200px hgt-200px">
-					<div class="carousel slide" data-ride="carousel">
-						<div class="carousel-inner">
-							<div class="item active pdn-t-40px">
-								<i class="<?= $part['icon'] ?> icon-5x"></i>
-								<h3><?= $part['label'] ?></h3>
-							</div>
-
-							<div class="item">
-								<a href="<?= \Backend::URL("axc/datamanagement/$name") ?>"></a>
-							</div>
-						</div>
+<div class="metro">
+	<div class="tile-area tile-area-dark">
+		<div class="title-group double">
+			<? foreach ($parts as $name => $part): ?>
+				<a href="<?= Backend::URL("axc/datamanagement/$name") ?>" class="tile <?= next($tile_size) ?> bg-<?= next($tile_bg) ?> live" data-role="live-tile" data-effect="slideUp" data-click="transform">
+					<div class="tile-content icon">
+						<i class="<?= $part['icon'] ?>"></i>
 					</div>
-				</div>
-			</div>
-		<? if ($index % 3 == 1): ?>
-			</div><!-- .row -->
-		<?endif ?>
-	<? endforeach ?>
+					<div class="tile-status">
+						<span class="name"><?= $part['label'] ?></span>
+						<div class="badge bg-red">99</div>
+					</div>
+				</a>
+			<? endforeach ?>
+		</div>
+	</div>
 </div>

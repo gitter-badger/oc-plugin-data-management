@@ -9,12 +9,7 @@ fields:
     label: axc.framework::lang.fields.title.label
     placeholder: axc.framework::lang.fields.title.placeholder
     required: true
-
-  url:
-    comment: axc.datamanagement::lang.link.fields.url.comment
-    label: axc.framework::lang.fields.url.label
-    placeholder: axc.framework::lang.fields.url.placeholder
-    required: true
+    span: left
 
   image:
     commentAbove: axc.datamanagement::lang.link.fields.image.comment
@@ -25,6 +20,13 @@ fields:
     size: giant
     span: right
     type: fileupload
+
+  url:
+    comment: axc.datamanagement::lang.link.fields.url.comment
+    label: axc.framework::lang.fields.url.label
+    placeholder: axc.framework::lang.fields.url.placeholder
+    required: true
+    span: left
 
   description:
     commentAbove: axc.framework::lang.fields.description.comment
